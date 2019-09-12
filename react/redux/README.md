@@ -2,4 +2,4 @@
 
 > A predictable state container for JavaScript apps.
 
-- [Introduction to redux (old)](introduction-to-redux-old/)
+- [Introduction to Redux (old)](introduction-to-redux-old/)

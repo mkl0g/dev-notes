@@ -6,6 +6,7 @@ This repository is collection of notes about things which I learn. Languages, fr
 
 ---
 
-## Main categories
+## Table of contents
 
 - [React](react/)
+- [Rx](rx/)

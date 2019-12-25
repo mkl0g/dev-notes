@@ -97,3 +97,47 @@ You can just replace _/notes_ in "child" routes by prop **match**:
 
     <Route path="/notes/:noteId" component={Note} />
 ```
+
+### How to pass props to component which is in route
+
+We can use prop **render** of component **Route** for that
+
+Input data
+
+```javascript
+const Human = ({ rollCall }) => {
+  rollCall("human");
+  return <div>Human</div>;
+};
+
+const Alien = ({ rollCall }) => {
+  rollCall("alien");
+  return <div>Alien</div>;
+};
+
+const routes = [
+  {
+    path: "/human",
+    component: Human,
+    rollCall: name => console.log(name)
+  },
+  {
+    path: "/alien",
+    component: Alien,
+    rollCall: name => console.log(name)
+  }
+];
+```
+
+Implementation
+
+```javascript
+        {routes.map(({ path, component: Component, rollCall }, i) => (
+          <Route
+            key={i}
+            path={path}
+            render={() => <Component rollCall={rollCall} />}
+          />
+        ))}
+```
+

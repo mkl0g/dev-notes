@@ -12,6 +12,8 @@ This repository is collection of notes about things which I learn. Languages, fr
 - - [Introduction to React library (outdated)](react/introduction-to-react.md)
 - - [React Testing Driven Development](react/react-tdd.md)
 - - [Introduction to React Router](react/introduction-to-react-router.md)
+- - [Error Boundary](error-boundary.md)
+- - [React Hooks](react-hooks.md)
 - [Redux](redux)
 - - [Introduction to Redux](redux/introduction-to-redux.md)
 - [Rx](rx)
@@ -30,4 +32,3 @@ This repository is collection of notes about things which I learn. Languages, fr
 - [Jest](jest)
 - - [Configuring Jest](jest/configuring-jest.md)
 - - [Mock Functions With Jest](jest/mock-functions-with-jest.md)
-
